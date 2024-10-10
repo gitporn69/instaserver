@@ -9,8 +9,8 @@ for file in list_dir:
     if file.endswith('.heic'):
         i=0
         while True:
-            if not os.path.exists(f"{i}.heic"):
-                os.rename(file,f"{i}.heic")
+            if not os.path.exists(f"{i}.jpg"):
+                os.rename(file,f"{i}.jpg")
                 break
             i=i+1
     
