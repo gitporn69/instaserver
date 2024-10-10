@@ -14,3 +14,11 @@ for file in list_dir:
                 break
             i=i+1
     
+    if file.endswith('.mp4'):
+        i=0
+        while True:
+            if not os.path.exists(f"{i}.mp4"):
+                os.rename(file,f"{i}.mp4")
+                break
+            i=i+1
+    
