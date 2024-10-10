@@ -8,7 +8,7 @@ os.chdir(target_dir)
 
 # Initialize max indices for .jpg and .mp4
 max_jpg_index = -1
-max_mp4_index = -1
+max_mp4_index = 17
 
 # Regular expression to check if the file name is in the format 'i.ext'
 numeric_pattern = re.compile(r'^\d+\.(jpg|mp4)$')
