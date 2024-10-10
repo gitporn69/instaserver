@@ -24,7 +24,7 @@ for file in list_dir:
                 max_jpg_index = file_index
         except ValueError:
             # Skip files that aren't numeric
-            pass
+            heic_files.append(file)
 
     # Check for already renamed .mp4 files
     elif file.endswith('.mp4'):
@@ -37,7 +37,7 @@ for file in list_dir:
             mp4_non_numeric_files.append(file)
 
     # Collect all .heic files
-    elif file.endswith('.heic'):
+    elif file.endswith('.heic') or file.endswith(".webp"):
         heic_files.append(file)
 
 # Rename .heic files to the next available .jpg index
