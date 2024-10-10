@@ -7,7 +7,7 @@ os.chdir(target_dir)
 
 # Initialize max indices for .jpg and .mp4
 max_jpg_index = -1
-max_mp4_index = 23
+max_mp4_index = 26
 
 # Lists to hold the files that need renaming
 heic_files = []
