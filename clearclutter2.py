@@ -1,13 +1,13 @@
 import os
 
 # Directory to monitor
-target_dir = r'D:\FuckingDownloads\instaserver'
+target_dir = r'D:\instaserver'
 list_dir = os.listdir(target_dir)
 os.chdir(target_dir)
 
 # Initialize max indices for .jpg and .mp4
-max_jpg_index = 49
-max_mp4_index = 87
+max_jpg_index = 55
+max_mp4_index = 88
 
 # Lists to hold the files that need renaming
 heic_files = []
